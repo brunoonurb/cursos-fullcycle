@@ -1,8 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
-require('dotenv').config()
-console.log(process.env.KAFKA_BROKER);
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });

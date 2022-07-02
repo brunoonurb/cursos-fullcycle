@@ -4,9 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RoutesModule } from './routes/routes.module';
-require('dotenv').config()
-console.log(process.env.MONGO_DSN);
-
+//ES7 decorators
 @Module({
   imports: [
     ConfigModule.forRoot(),
